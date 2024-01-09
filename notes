@@ -1,0 +1,159 @@
+// Day 1-->>
+// Before starting of the journey of booking app (airbnb clone) :--
+// techstacks we need :- 1) tailwind , 2)Mern
+// step 1)
+// install and setup tailwind css and make the header of the app ,, icons taken from heroicons and font_Awesome.
+// Make a folder named pages inside this add IndexPage , LoginPage , RegisterPage
+
+// inside src make a folder named as components and inside this add Header and Layout.
+
+// Till here 42 mins. all above tasks are completed......
+
+
+// Day 2:-->>
+// step 1) make a file named index.js inside api folder  and then inside the api directory ,, install express.js
+
+// -->> inside client install axios
+
+// -->> after creating the test endpoint if the cors error comes inside api intall cors and inside index.js set it up.
+// -->> registerUser ka v ek endpoint bna liye.
+// usko network me jake cross check kr liye ,, that if it is returning the correct response.
+// -->> now create new project in MongoDB atlas as bookingApp as name and password.
+
+// Till here 57 mins. all above tasks are completed......
+
+// Day 3-->>
+// -->> install mongoose inside api folder
+// -->> now inside index.js connect it to database
+// -->> copy the connection string and inside api make env file and keep that mongo connection string there.
+// -->> inside api install dotenv to preocess the connection string that is inside the env file
+// -->> now api k ander modals folder bnaye and uske ander User.js ka ek schema bnaye that is copied from mongoose
+// -->> User.js k inside hmlog banye const UserSchema , const UserModel and module.exports=UserModel
+// -->> inside api install bcryptjs to hash the password and do all it's setup in the index.js
+
+// Till now mongoDB is successfully connected and register krne pr data save v ho rha h
+
+// Till here 1 hr 8 mins. all above tasks are completed......
+
+// -->>now create the function for login button and write code for matching of user password with the password in the database this is done only after the email match is done.
+
+// -->> make another route for login in the index.js
+// -->> If checkPassword then and cookie in the response
+
+// Till here 1 hr 18 mins. all above tasks are completed......
+
+// Day 4-->>
+
+// -->>Install jwt in the api and include it in the index.js
+// -->>Now inside index.js when checkPassword satisfies then include token
+// -->>Now write for jwt.sign  and res.cookie
+// -->>inside src create folder named context inside that create file named UserContext.js
+// -->>write skeleton code for UserContext
+// -->>use that context in App.jsx
+
+// Till here 1 hr 35 mins. all above tasks are completed......
+
+// Day 5-->>
+// -->>login pr user.name show krne k liye header me code likhe
+// -->>UserContext me useEffect likhe
+// -->>index.js me login hone pr token milega iske liye ek alag se Route likhe
+// -->>installed cookie parser inside api folder
+// -->>AccountPage banaye inside pages folder
+// -->>uska code likhe if login nii h then login page pr redirect kro
+// -->>AccountPage k inside hi subpage bna liye  bookings and places ka
+// -->>Jispe click krenge uska color primary ho jayega
+// -->>Logout buttton dale....usko click krne pr user logout ho jayega and indexPage pr redirect ho jayega
+
+// Till here 2 hr 10 mins. all above tasks are completed......
+
+// Day 5-->>
+// -->>model folder k inside me ek PlaceSchema bnaye
+// -->>Pages folder me PlacesPage ko add kiye
+// -->>PlacesPage ka code likhe
+// -->>PlacesPage ko account wale page me render kiye by doing subpage==='places'
+// -->>Add new places wala buttton bnaye in PlacesPage folder
+// -->>Usme Palces add krne k liye jo chahiye uska form add kiye
+
+// Till here 2 hr 25 mins. all above tasks are completed......
+
+// Day 6-->>
+// -->>Photos add krne ka bnaye and upload krne ka v bnaye
+// -->>uske bad description , extra info add kiye
+// -->>save button v add kiye
+// -->>Now making state for all the entities in the form using useState
+// -->>Now sbke liye value={maxguests} and onChange={evnt=>setMaxguests(evnt.target.value)}
+// -->>inside api make a folder 
+// -->>inside index.js add a endpoint for adding images to the upload folder
+// -->>inside api folder down a npm package called image-downloader
+
+// Till here 2 hr 55 mins. all above tasks are completed......
+
+// Day 7-->>
+// -->>inside PlacesPage.jsx we make a function using which we can add photos through link
+// -->>Now that photos will be saved in uploads folder and that will be visible in the page only
+// -->>app.use('/uploads',express.static(__dirname+'/uploads'));This line of code sets up a middleware in your Express application to serve static files from the 'uploads' directory, and any URL path starting with '/uploads' will be mapped to the corresponding file in the 'uploads' directory. This is commonly used to serve uploaded files or other static assets in a web application.
+// -->>install multer inside api folder
+// -->>Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. It is written on top of busboy for maximum efficiency.
+// -->>NOTE: Multer will not process any form which is not multipart (multipart/form-data).
+
+// Till here 3 hr 13 mins. all above tasks are completed......
+
+// Day 8-->>
+// -->>Make the upload button functional when we click we are able to view it in headers
+// -->>Inside index.js import fs i.e fileSystem
+// -->>upload krne pr photo dikh rha hai
+// -->>Add by link i.e Ass Photos me problem h....add ho rha h lekin dikh nii rha h
+
+//// Till here 3 hr 29 mins. all above tasks are completed......
+
+// Day 9-->>
+// -->>Small bug fixes and refactoring
+// -->>
+
+//// Till here 4 hr 6 mins. all above tasks are completed......
+
+// Day 10-->>
+// -->>Working on listing user places/accomodations
+// -->>Goto PlacesPage.jsx
+// -->>
+
+//// Till here 4 hr 20 mins. all above tasks are completed......
+
+// Day 11 -->>
+// -->>Displaying the photo for the each places added and fixing the size issues of the image and its container div
+// -->>Inside the PhotosUploader.jsx Adding the function for removing the added photos and making any photo as the main photo
+// -->>Displaying all places in the index page
+
+//// Till here 5 hr 3 mins. all above tasks are completed......
+
+// Day 12 -->>Creating PlacePage.jsx   inside the folder pages i.e when we click on a particular place listed on the homepage the detailed info. about that place should come
+// -->>writing the required code for PlacePage.jsx
+// -->>Integrating the placesname with the google maps
+// -->>
+
+//// Till here 5 hr 3 mins. all above tasks are completed......
+
+// Day 12 -->>
+// -->>Working on PlacePage.jsx
+// -->>when we click on the particular place a page opens and it has all details related to that place
+// -->>
+
+//// Till here 5 hr 32 mins. all above tasks are completed......
+
+// Day 13 -->>
+// -->>Inside client install date-fns
+// -->>
+// -->>
+
+//// Till here 6 hr  28 mins. all above tasks are completed......
+
+// Day 14 -->>
+// -->>Inside client install date-fns
+// -->>
+// -->>
+
+//// Till here 6 hr  37 mins. all above tasks are completed......
+
+
+
+
